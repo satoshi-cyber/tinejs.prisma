@@ -1,0 +1,29 @@
+{
+  "name": "tinejs.prisma",
+  "version": "0.0.1",
+  "description": "tinejs - prisma extension",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satoshi-cyber/tinejs.prisma-accelerate.git"
+  },
+  "author": "Bersen Pajaziti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satoshi-cyber/tinejs.prisma-accelerate/issues"
+  },
+  "homepage": "https://github.com/satoshi-cyber/tinejs.prisma-accelerate#readme",
+  "dependencies": {
+    "tinejs": "^0.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=4.10.0"
+  }
+}
