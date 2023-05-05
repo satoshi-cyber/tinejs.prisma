@@ -116,7 +116,7 @@ export default Prisma.defineExtension((client) => {
         createMany<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'createMany'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
@@ -128,7 +128,7 @@ export default Prisma.defineExtension((client) => {
         delete<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'delete'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
@@ -140,7 +140,7 @@ export default Prisma.defineExtension((client) => {
         update<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'update'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
@@ -152,7 +152,7 @@ export default Prisma.defineExtension((client) => {
         deleteMany<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'deleteMany'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
@@ -164,7 +164,7 @@ export default Prisma.defineExtension((client) => {
         updateMany<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'updateMany'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
@@ -176,7 +176,7 @@ export default Prisma.defineExtension((client) => {
         upsert<T, A>(
           this: T,
           x: Prisma.Exact<A, Prisma.Args<T, 'upsert'>>,
-          actionCtx: { name: string },
+          actionCtx?: { name: string },
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
