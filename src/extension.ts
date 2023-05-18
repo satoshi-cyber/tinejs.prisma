@@ -14,7 +14,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'findUnique'>>(
             (p) => client[ctx.name].findUnique(p),
-            { action: `prisma.${ctx.name}.findUnique` },
+            { action: `prisma.${ctx.name}.findUnique`, parseResponse: true },
           )(x, actionCtx);
         },
         findUniqueOrThrow<T, A>(
@@ -26,7 +26,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<any, Prisma.Result<T, A, 'findUniqueOrThrow'>>(
             (p) => client[ctx.name].findUniqueOrThrow(p),
-            { action: `prisma.${ctx.name}.findUniqueOrThrow` },
+            { action: `prisma.${ctx.name}.findUniqueOrThrow`, parseResponse: true },
           )(x, actionCtx);
         },
         findFirst<T, A>(
@@ -38,7 +38,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'findFirst'>>(
             (p) => client[ctx.name].findFirst(p),
-            { action: `prisma.${ctx.name}.findFirst` },
+            { action: `prisma.${ctx.name}.findFirst`, parseResponse: true },
           )(x, actionCtx);
         },
         findFirstOrThrow<T, A>(
@@ -50,7 +50,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'findFirstOrThrow'>>(
             (p) => client[ctx.name].findFirstOrThrow(p),
-            { action: `prisma.${ctx.name}.findFirstOrThrow` },
+            { action: `prisma.${ctx.name}.findFirstOrThrow`, parseResponse: true },
           )(x, actionCtx);
         },
         findMany<T, A>(
@@ -62,7 +62,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'findMany'>>(
             (p) => client[ctx.name].findMany(p),
-            { action: `prisma.${ctx.name}.findMany` },
+            { action: `prisma.${ctx.name}.findMany`, parseResponse: true },
           )(x, actionCtx);
         },
         aggregate<T, A>(
@@ -74,7 +74,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'aggregate'>>(
             (p) => client[ctx.name].aggregate(p),
-            { action: `prisma.${ctx.name}.aggregate` },
+            { action: `prisma.${ctx.name}.aggregate`, parseResponse: true },
           )(x, actionCtx);
         },
         groupBy<T, A>(
@@ -86,7 +86,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'groupBy'>>(
             (p) => client[ctx.name].groupBy(p),
-            { action: `prisma.${ctx.name}.groupBy` },
+            { action: `prisma.${ctx.name}.groupBy`, parseResponse: true },
           )(x, actionCtx);
         },
         count<T, A>(
@@ -98,7 +98,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'count'>>(
             (p) => client[ctx.name].count(p),
-            { action: `prisma.${ctx.name}.count` },
+            { action: `prisma.${ctx.name}.count`, parseResponse: true },
           )(x, actionCtx);
         },
         create<T, A>(
@@ -110,7 +110,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'create'>>(
             (p) => client[ctx.name].create(p),
-            { action: `prisma.${ctx.name}.create` },
+            { action: `prisma.${ctx.name}.create`, parseResponse: true },
           )(x, actionCtx);
         },
         createMany<T, A>(
@@ -122,7 +122,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'createMany'>>(
             (p) => client[ctx.name].createMany(p),
-            { action: `prisma.${ctx.name}.createMany` },
+            { action: `prisma.${ctx.name}.createMany`, parseResponse: true },
           )(x, actionCtx);
         },
         delete<T, A>(
@@ -134,7 +134,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'delete'>>(
             (p) => client[ctx.name].delete(p),
-            { action: `prisma.${ctx.name}.delete` },
+            { action: `prisma.${ctx.name}.delete`, parseResponse: true },
           )(x, actionCtx);
         },
         update<T, A>(
@@ -146,7 +146,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'update'>>(
             (p) => client[ctx.name].update(p),
-            { action: `prisma.${ctx.name}.update` },
+            { action: `prisma.${ctx.name}.update`, parseResponse: true },
           )(x, actionCtx);
         },
         deleteMany<T, A>(
@@ -158,7 +158,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'deleteMany'>>(
             (p) => client[ctx.name].deleteMany(p),
-            { action: `prisma.${ctx.name}.deleteMany` },
+            { action: `prisma.${ctx.name}.deleteMany`, parseResponse: true },
           )(x, actionCtx);
         },
         updateMany<T, A>(
@@ -170,7 +170,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'updateMany'>>(
             (p) => client[ctx.name].updateMany(p),
-            { action: `prisma.${ctx.name}.updateMany` },
+            { action: `prisma.${ctx.name}.updateMany`, parseResponse: true },
           )(x, actionCtx);
         },
         upsert<T, A>(
@@ -182,7 +182,7 @@ export default Prisma.defineExtension((client) => {
 
           return tineAction<unknown, Prisma.Result<T, A, 'upsert'>>(
             (p) => client[ctx.name].upsert(p),
-            { action: `prisma.${ctx.name}.upsert` },
+            { action: `prisma.${ctx.name}.upsert`, parseResponse: true },
           )(x, actionCtx);
         },
       },
