@@ -12,7 +12,7 @@ export default (getClient: (ctx: TineCtx) => any) => Prisma.defineExtension((cli
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
-          return tineAction<unknown, Prisma.Result<T, A, 'findUnique'>>(
+          return tineAction<unknown, Prisma.Result<T, A, 'findUnique'> | null>(
             (p, { ctx: tineCtx }) => getClient(tineCtx)[ctx.name].findUnique(p),
             { action: `prisma.${ctx.name}.findUnique`, parseResponse: true },
           )(x, actionCtx);
@@ -36,7 +36,7 @@ export default (getClient: (ctx: TineCtx) => any) => Prisma.defineExtension((cli
         ) {
           const ctx = Prisma.getExtensionContext(this);
 
-          return tineAction<unknown, Prisma.Result<T, A, 'findFirst'>>(
+          return tineAction<unknown, Prisma.Result<T, A, 'findFirst'> | null>(
             (p, { ctx: tineCtx }) => getClient(tineCtx)[ctx.name].findFirst(p),
             { action: `prisma.${ctx.name}.findFirst`, parseResponse: true },
           )(x, actionCtx);
