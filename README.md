@@ -8,9 +8,9 @@ payload action
 
 ```typescript
 import { PrismaClient } from '@prisma/client/edge';
-import useTine from 'tinejs.prisma';
+import tineExtension from 'tinejs.prisma';
 
-const prisma = new PrismaClient().$extends(useTine);
+const prisma = new PrismaClient().$extends(tineExtension());
 
 export default prisma;
 
