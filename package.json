@@ -1,6 +1,6 @@
 {
   "name": "tinejs.prisma",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "tinejs - prisma extension",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,6 +22,6 @@
   },
   "peerDependencies": {
     "@prisma/client": "^4.13.0",
-    "tinejs": "^0.0.33"
+    "tinejs": "^0.0.38"
   }
 }
