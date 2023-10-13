@@ -1,6 +1,6 @@
 {
   "name": "tinejs.prisma",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "tinejs - prisma extension",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,10 +18,15 @@
   },
   "homepage": "https://github.com/satoshi-cyber/tinejs.prisma-accelerate#readme",
   "devDependencies": {
+    "prisma": "^5.1.1",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
     "@prisma/client": "^4.13.0",
     "tinejs": "^0.0.64"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.1.1",
+    "tinejs": "^0.0.74"
   }
 }
